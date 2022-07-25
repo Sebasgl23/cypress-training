@@ -33,6 +33,5 @@ describe("Buy a t-shirt", () => {
     paymentStep.payByBankWire();
     paymentStep.confirmOrder();
     paymentStep.validateConfirmationMessage(confirmationMessage);
-
   });
 });
