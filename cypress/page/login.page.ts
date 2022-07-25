@@ -11,12 +11,9 @@ class LoginPage {
     this.signInButton = "#SubmitLogin";
   }
 
-  public loginToCheckOut(email: string, password: string): void {
+  public login(email: string, password: string): void {
     cy.get(this.emailInput).type(email);
     cy.get(this.passwordInput).type(password);
-  }
-
-  public proceedToAddress(): void {
     cy.get(this.signInButton).click();
   }
 }

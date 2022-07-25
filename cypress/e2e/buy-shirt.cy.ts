@@ -26,8 +26,7 @@ describe("Buy a t-shirt", () => {
     productListPage.addTShirtToCart();
     productListPage.proceedToCkeckout();
     shoppingCartPage.proceedToCkeckoutLogin();
-    loginPage.loginToCheckOut(email, password);
-    loginPage.proceedToAddress();
+    loginPage.login(email, password);
     addressStep.proceedToShipping();
     shippingStep.acceptTermsOfService();
     shippingStep.proceedToPayment();
