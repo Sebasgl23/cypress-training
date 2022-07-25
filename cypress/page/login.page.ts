@@ -11,9 +11,9 @@ class LoginPage {
     this.signInButton = "#SubmitLogin";
   }
 
-  public loginToCheckOut(): void {
-    cy.get(this.emailInput).type("aperdomobo@gmail.com");
-    cy.get(this.passwordInput).type("WorkshopProtractor");
+  public loginToCheckOut(email: string, password: string): void {
+    cy.get(this.emailInput).type(email);
+    cy.get(this.passwordInput).type(password);
   }
 
   public proceedToAddress(): void {

@@ -19,10 +19,10 @@ class PaymentStep {
     cy.get(this.confirmOrderButton).click();
   }
 
-  public checkSuccesfulyOrder():void {
+  public validateConfirmationMessage(confirmationMessage: string):void {
     cy.get(this.confirmPaymentText).should(
         "have.text",
-        "Your order on My Store is complete.");
+        `${confirmationMessage}`);
   }
 }
 
