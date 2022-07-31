@@ -5,7 +5,7 @@ class MenuContentPage {
 
 
   constructor() {
-    this.tShirtMenu = "#block_top_menu > ul > li:nth-child(3) > a";
+    this.tShirtMenu = "[title='T-shirts']";
     this.menuContentPageURL = "http://automationpractice.com/";
   }
 
@@ -14,7 +14,7 @@ class MenuContentPage {
   }
 
   public goToTShirtMenu(): void {
-    cy.get(this.tShirtMenu).click();
+    cy.get(this.tShirtMenu).eq(1).click();
   }
 }
 
