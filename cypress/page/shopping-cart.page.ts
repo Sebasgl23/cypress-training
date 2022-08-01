@@ -4,11 +4,11 @@ class ShoppingCartPage {
   private proceedToCheckOutLogInButton: string;
 
   constructor() {
-    this.proceedToCheckOutLogInButton = "[title='Proceed to checkout']";
+    this.proceedToCheckOutLogInButton = ".cart_navigation [title='Proceed to checkout']";
   }
 
   public proceedToCkeckoutLogin(): void {
-    cy.get(this.proceedToCheckOutLogInButton).eq(1).click();
+    cy.get(this.proceedToCheckOutLogInButton).click();
   }
 }
 
